@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_65b004dd2ec03",
+    "title": "Algemene downloads",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Algemene downloads",
+    "menu_slug": "algemene-downloads",
+    "parent_slug": "none",
+    "advanced_configuration": 0,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": 0,
+    "description": "",
+    "update_button": "Updaten",
+    "updated_message": "Opties bijgewerkt",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1706034404
+}

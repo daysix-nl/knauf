@@ -690,6 +690,9 @@ video {
 .h-auto {
   height: auto;
 }
+.h-3 {
+  height: 30px;
+}
 .min-h-\[250px\] {
   min-height: 250px;
 }
@@ -722,6 +725,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-3 {
+  width: 30px;
 }
 .min-w-\[150px\] {
   min-width: 150px;
@@ -787,11 +793,17 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-none {
+  border-radius: 0px;
+}
 .border-\[1px\] {
   border-width: 1px;
 }
 .border-b-\[1px\] {
   border-bottom-width: 1px;
+}
+.border-t-\[1px\] {
+  border-top-width: 1px;
 }
 .border-\[\#979797\] {
   --tw-border-opacity: 1;
@@ -808,6 +820,10 @@ video {
 .border-\[\#e6e8ed\] {
   --tw-border-opacity: 1;
   border-color: rgb(230 232 237 / var(--tw-border-opacity));
+}
+.border-\[\#2B2828\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(43 40 40 / var(--tw-border-opacity));
 }
 .bg-\[\#009FE3\] {
   --tw-bg-opacity: 1;
@@ -832,6 +848,17 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.from-transparent {
+  --tw-gradient-from: transparent var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.to-transparent {
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 .object-cover {
   -o-object-fit: cover;
@@ -978,6 +1005,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-\[\#8CC63F\] {
+  --tw-text-opacity: 1;
+  color: rgb(140 198 63 / var(--tw-text-opacity));
+}
+.drop-shadow-\[0px_0px_15px_\#8CC63F\] {
+  --tw-drop-shadow: drop-shadow(0px 0px 15px #8CC63F);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1030,8 +1065,20 @@ video {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .md\:pb-\[50px\] {
+    padding-bottom: 50px;
+  }
 }
 @media (min-width: 1200px) {
+
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-3 {
+    order: 3;
+  }
 
   .lg\:mr-\[80px\] {
     margin-right: 80px;
@@ -1051,5 +1098,9 @@ video {
 
   .lg\:pl-\[80px\] {
     padding-left: 80px;
+  }
+
+  .lg\:pb-\[80px\] {
+    padding-bottom: 80px;
   }
 }
