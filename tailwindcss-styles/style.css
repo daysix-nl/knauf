@@ -660,6 +660,9 @@ video {
 .aspect-\[16\/12\] {
   aspect-ratio: 16/12;
 }
+.h-3 {
+  height: 30px;
+}
 .h-\[0\.5px\] {
   height: 0.5px;
 }
@@ -690,14 +693,14 @@ video {
 .h-auto {
   height: auto;
 }
-.h-3 {
-  height: 30px;
-}
 .min-h-\[250px\] {
   min-height: 250px;
 }
 .min-h-full {
   min-height: 100%;
+}
+.w-3 {
+  width: 30px;
 }
 .w-\[15\%\] {
   width: 15%;
@@ -725,9 +728,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-3 {
-  width: 30px;
 }
 .min-w-\[150px\] {
   min-width: 150px;
@@ -805,6 +805,10 @@ video {
 .border-t-\[1px\] {
   border-top-width: 1px;
 }
+.border-\[\#2B2828\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(43 40 40 / var(--tw-border-opacity));
+}
 .border-\[\#979797\] {
   --tw-border-opacity: 1;
   border-color: rgb(151 151 151 / var(--tw-border-opacity));
@@ -820,10 +824,6 @@ video {
 .border-\[\#e6e8ed\] {
   --tw-border-opacity: 1;
   border-color: rgb(230 232 237 / var(--tw-border-opacity));
-}
-.border-\[\#2B2828\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(43 40 40 / var(--tw-border-opacity));
 }
 .bg-\[\#009FE3\] {
   --tw-bg-opacity: 1;
@@ -845,12 +845,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(10 31 22 / var(--tw-bg-opacity));
 }
+.bg-transparent {
+  background-color: transparent;
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-transparent {
-  background-color: transparent;
 }
 .from-transparent {
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
@@ -997,6 +997,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(51 72 112 / var(--tw-text-opacity));
 }
+.text-\[\#8CC63F\] {
+  --tw-text-opacity: 1;
+  color: rgb(140 198 63 / var(--tw-text-opacity));
+}
 .text-\[\#B3BAC9\] {
   --tw-text-opacity: 1;
   color: rgb(179 186 201 / var(--tw-text-opacity));
@@ -1004,10 +1008,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[\#8CC63F\] {
-  --tw-text-opacity: 1;
-  color: rgb(140 198 63 / var(--tw-text-opacity));
 }
 .drop-shadow-\[0px_0px_15px_\#8CC63F\] {
   --tw-drop-shadow: drop-shadow(0px 0px 15px #8CC63F);
@@ -1096,11 +1096,11 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:pl-\[80px\] {
-    padding-left: 80px;
-  }
-
   .lg\:pb-\[80px\] {
     padding-bottom: 80px;
+  }
+
+  .lg\:pl-\[80px\] {
+    padding-left: 80px;
   }
 }
