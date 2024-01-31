@@ -41,7 +41,7 @@ $current_user = wp_get_current_user();
                 <h2 class="text-24 leading-24 text-[#001A4C] mb-2">Mijn marketing activiteiten</h2>
                 <p class="font-light text-[#001A4C]"><?php the_field('marketing_activiteiten', 'user_' . $current_user_id); ?></p>
                 <?php if (get_field('type_partner', 'user_' . $current_user_id) === "Promotor (Level 1)"): ?>   
-                <a href="https://partner.knaufmarketing.nl/marketing-activiteiten/?c=1&voornaam=<?php echo esc_html( $current_user->user_firstname ) ?>&achternaam=<?php echo esc_html( $current_user->user_lastname ) ?>&email=<?php echo esc_html( $current_user->user_email ) ?>&k<?php echo esc_html( $current_user->user_login )?>">
+                <a href="https://partner.knaufmarketing.nl/marketing-activiteiten/?c=1&voornaam=<?php echo esc_html( $current_user->user_firstname ) ?>&achternaam=<?php echo esc_html( $current_user->user_lastname ) ?>&email=<?php echo esc_html( $current_user->user_email ) ?>&k=<?php echo esc_html( $current_user->user_login )?>">
                 <div class="flex mt-[30px]">
                     <p class="font-medium text-[#009FE3] mr-[10px]">Bestellen</p>
                     <div class="h-[24px] w-[24px] flex items-center">
@@ -57,7 +57,7 @@ $current_user = wp_get_current_user();
                 </a>
                 <?php endif; ?>
                 <?php if (get_field('type_partner', 'user_' . $current_user_id) === "Ambassadeur (Level 2)"): ?>   
-                <a href="https://partner.knaufmarketing.nl/marketing-activiteiten/?c=2&voornaam=<?php echo esc_html( $current_user->user_firstname ) ?>&achternaam=<?php echo esc_html( $current_user->user_lastname ) ?>&email=<?php echo esc_html( $current_user->user_email ) ?>&k<?php echo esc_html( $current_user->user_login )?>">
+                <a href="https://partner.knaufmarketing.nl/marketing-activiteiten/?c=2&voornaam=<?php echo esc_html( $current_user->user_firstname ) ?>&achternaam=<?php echo esc_html( $current_user->user_lastname ) ?>&email=<?php echo esc_html( $current_user->user_email ) ?>&k=<?php echo esc_html( $current_user->user_login )?>">
                  <div class="flex mt-[30px]">
                     <p class="font-medium text-[#009FE3] mr-[10px]">Bestellen</p>
                     <div class="h-[24px] w-[24px] flex items-center">
