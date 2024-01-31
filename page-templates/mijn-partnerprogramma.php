@@ -39,11 +39,10 @@ $current_user_id = get_current_user_id();
             <div class="w-full min-h-[250px] px-[25px]  schaduw py-[30px] order-1 md:order-2">
                 <h2 class="text-24 leading-24 text-[#001A4C] mb-2">Mijn marketing activiteiten</h2>
                 <p class="font-light text-[#001A4C]"><?php the_field('marketing_activiteiten', 'user_' . $current_user_id); ?></p>
-                <?php the_field('type_partner', 'user_' . $current_user_id); ?>
-                <?php if (get_field('type_partner', 'user_' . $current_user_id) === "1"): ?>   
+                <?php if (get_field('type_partner', 'user_' . $current_user_id) === "Promotor (Level 1)"): ?>   
                 <a href="">1</a>
                 <?php endif; ?>
-                <?php if (get_field('type_partner', 'user_' . $current_user_id) === "2"): ?>   
+                <?php if (get_field('type_partner', 'user_' . $current_user_id) === "Ambassadeur (Level 2)"): ?>   
                 <a href="">2</a>
                 <?php endif; ?>
             </div>
