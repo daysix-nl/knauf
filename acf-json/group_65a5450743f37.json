@@ -124,6 +124,26 @@
             "append": ""
         },
         {
+            "key": "field_65ba126cef083",
+            "label": "Resterend budget",
+            "name": "restbudget",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_65a54a1e1fb4b",
             "label": "Downloads",
             "name": "",
@@ -414,5 +434,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706037928
+    "modified": 1706693314
 }

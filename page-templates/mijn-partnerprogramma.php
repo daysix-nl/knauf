@@ -34,6 +34,11 @@ $current_user = wp_get_current_user();
                     <p class="text-white font-light text-14 lleading-18">Budget</p>
                     <p class="text-white font-light text-14 leading-18"><?php the_field('budget', 'user_' . $current_user_id); ?></p>
                 </div>
+                <div class="h-[0.5px] bg-white w-full my-[6px]"></div>
+                <div class="grid grid-cols-2">
+                    <p class="text-white font-light text-14 lleading-18">Rest. budget</p>
+                    <p class="text-white font-light text-14 leading-18"><?php the_field('restbudget', 'user_' . $current_user_id); ?></p>
+                </div>
                 
                 <div class="h-[0.5px] bg-white w-full my-[6px]"></div>
             </div>
