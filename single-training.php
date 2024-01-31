@@ -13,6 +13,9 @@
         <h2 class="text-24 leading-24 text-[#001A4C]"><?php the_field('subtitel');?></h2>
         <div class="text-editor mt-[20px] mb-[40px] font-light text-[#001A4C]">
             <?php the_field('tekst');?>
+             <div class="mt-[30px]">
+                <?php echo do_shortcode( '[gravityform id="3" title="false"]' ); ?>
+            </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div class="w-full min-h-[250px] bg-black overflow-hidden order-2 md:order-1">
@@ -47,10 +50,8 @@
                 <div class="h-[0.5px] bg-white w-full my-[6px]"></div>
             </div>
         </div>
-        <div class="mt-[30px]">
-            <?php echo do_shortcode( '[gravityform id="3" title="false"]' ); ?>
-        </div>
-        <a href="/trainingen" class="flex mt-[50px] justify-center">
+       
+        <a href="/trainingen" class="flex mt-[30px] justify-center">
             <div class="h-[24px] w-[24px] flex items-center">
                 <svg class="rotate-[-180deg]" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
