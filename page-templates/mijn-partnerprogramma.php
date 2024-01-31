@@ -81,6 +81,22 @@ $current_user = wp_get_current_user();
             <div class="w-full min-h-[250px] px-[25px]  schaduw py-[30px] order-1 md:order-2">
                 <h2 class="text-24 leading-24 text-[#001A4C] mb-2">Mijn klanten activiteiten</h2>
                 <p class="font-light text-[#001A4C]"><?php the_field('klanten_activiteiten', 'user_' . $current_user_id); ?></p>
+                <?php if (get_field('url', 'user_' . $current_user_id)): ?>   
+                <a href="<?php the_field('url', 'user_' . $current_user_id); ?>">
+                 <div class="flex mt-[30px]">
+                    <p class="font-medium text-[#009FE3] mr-[10px]">Bestellen</p>
+                    <div class="h-[24px] w-[24px] flex items-center">
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Group" fill="#009FE3" fill-rule="nonzero">
+                                    <polygon id="Path" points="8 0 6.59 1.41 12.17 7 0 7 0 9 12.17 9 6.59 14.59 8 16 16 8"></polygon>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                </a>
+                <?php endif; ?>
             </div>
             <div class="w-full min-h-[250px] px-[25px]  schaduw py-[30px] order-1 md:order-2">
                 <h2 class="text-24 leading-24 text-[#001A4C] mb-2">Mijn trainingen</h2>
