@@ -4,56 +4,60 @@ body .gform_legacy_markup_wrapper ul li.gfield label {
     color: #484846 !important
 }
 
-.gform_legacy_markup_wrapper .field_sublabel_below .ginput_complex.ginput_container label,
-.gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
-    margin: 1px 0 9px 1px !important;
-    padding-top: 0px !important;
-    color: #dbdbdb !important;
-}
+.knauf {
 
-.gform_legacy_markup_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
-    font-size: 15px !important;
-    font-family: inherit;
-    padding: 5px 4px;
-    letter-spacing: normal;
-    font-weight: 300 !important;
-}
+    .gform_legacy_markup_wrapper .field_sublabel_below .ginput_complex.ginput_container label,
+    .gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
+        margin: 1px 0 9px 1px !important;
+        padding-top: 0px !important;
+        color: #dbdbdb !important;
+    }
 
-.gform_fileupload_rules {
-    display: flex !important;
-    font-size: .813em !important;
-}
+    .gform_legacy_markup_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+        font-size: 15px !important;
+        font-family: inherit;
+        padding: 5px 4px;
+        letter-spacing: normal;
+        font-weight: 300 !important;
+    }
 
-input.button {
-    background-color: #009fe3 !important;
-    color: #ffffff !important;
-    padding: 16px 20px !important;
-    text-align: center !important;
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-    height: unset !important;
-}
+    .gform_fileupload_rules {
+        display: flex !important;
+        font-size: .813em !important;
+    }
 
-input {
-    height: 35px !important;
-    border: 1px solid #dbdbdb !important;
-}
+    input.button {
+        background-color: #009fe3 !important;
+        color: #ffffff !important;
+        padding: 16px 20px !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important;
+        height: unset !important;
+    }
 
-select {
-    height: 35px !important;
-    border: 1px solid #dbdbdb !important;
-}
+    input {
+        height: 35px !important;
+        border: 1px solid #dbdbdb !important;
+    }
 
-.gform_button_select_files {
-    border: 1px solid #aaa !important;
-    background: #f4f4f4 !important;
-    padding: 10px !important
-}
+    select {
+        height: 35px !important;
+        border: 1px solid #dbdbdb !important;
+    }
 
-.ginput_container.ginput_container_consent {
-    display: flex !important;
-}
+    .gform_button_select_files {
+        border: 1px solid #aaa !important;
+        background: #f4f4f4 !important;
+        padding: 10px !important
+    }
 
-input[type="checkbox" i] {
-    margin-right: 15px !important;
+    .ginput_container.ginput_container_consent {
+        display: flex !important;
+    }
+
+    input[type="checkbox" i] {
+        margin-right: 15px !important;
+    }
+
 }

@@ -857,3 +857,40 @@ function wijzig_loginpagina_logo() {
     </style>';
 }
 add_action('login_enqueue_scripts', 'wijzig_loginpagina_logo');
+
+
+/*
+|--------------------------------------------------------------------------
+| USER PAGINA
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+// Voeg een aangepaste kolom toe aan de gebruikerstabel
+function custom_user_table_columns($columns) {
+    $columns['bedrijfsnaam'] = 'Bedrijfsnaam'; // Vervang 'bedrijfsnaam' door de naam van jouw ACF-veld
+    return $columns;
+}
+add_filter('manage_users_columns', 'custom_user_table_columns');
+
+// Vul de aangepaste kolom met gegevens
+function custom_user_table_column_data($value, $column_name, $user_id) {
+    if ($column_name == 'bedrijfsnaam') {
+        // Haal de waarde van het ACF-veld op
+        $bedrijfsnaam = get_field('bedrijfsnaam', 'user_' . $user_id); // Vervang 'bedrijfsnaam' door de naam van jouw ACF-veld
+        return $bedrijfsnaam;
+    }
+    return $value;
+}
+add_filter('manage_users_custom_column', 'custom_user_table_column_data', 10, 3);
+
+
+// Verwijder de kolom "Berichten" uit de gebruikerstabel
+function remove_user_table_column($columns) {
+    unset($columns['posts']); // 'posts' is de sleutel voor de "Berichten" kolom
+    return $columns;
+}
+add_filter('manage_users_columns', 'remove_user_table_column');

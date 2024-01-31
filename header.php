@@ -24,7 +24,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'page-block' ); ?>>
+<body <?php body_class( 'page-block knauf' ); ?>>
 <header class="w-full border-b-[1px] border-[#979797] fixed top-0 bg-white">
     <div class="pl-[20px] lg:pl-[80px] h-[68px] md:h-[64px] flex items-center justify-between">
         <div class="flex h-[68px] md:h-[64px] items-center lg:hidden">
