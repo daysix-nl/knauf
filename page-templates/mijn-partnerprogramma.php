@@ -82,7 +82,7 @@ $current_user = wp_get_current_user();
                 <h2 class="text-24 leading-24 text-[#001A4C] mb-2">Mijn klanten activiteiten</h2>
                 <p class="font-light text-[#001A4C]"><?php the_field('klanten_activiteiten', 'user_' . $current_user_id); ?></p>
                 <?php if (get_field('url', 'user_' . $current_user_id)): ?>   
-                <a href="<?php the_field('url', 'user_' . $current_user_id); ?>">
+                <a href="<?php the_field('url', 'user_' . $current_user_id); ?>" target="_blank">
                  <div class="flex mt-[30px]">
                     <p class="font-medium text-[#009FE3] mr-[10px]">Bestellen</p>
                     <div class="h-[24px] w-[24px] flex items-center">
