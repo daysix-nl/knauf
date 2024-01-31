@@ -13,7 +13,7 @@
         <h2 class="text-24 leading-24 text-[#001A4C]"><?php the_field('subtitel');?></h2>
         <div class="text-editor mt-[20px] mb-[40px] font-light text-[#001A4C]">
             <?php the_field('tekst');?>
-             <div class="mt-[30px]">
+             <div class="mt-[15px]">
                 <?php echo do_shortcode( '[gravityform id="3" title="false"]' ); ?>
             </div>
         </div>
