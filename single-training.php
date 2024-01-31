@@ -47,7 +47,10 @@
                 <div class="h-[0.5px] bg-white w-full my-[6px]"></div>
             </div>
         </div>
-        <a href="/trainingen" class="flex mt-[30px] justify-center">
+        <div class="mt-[30px]">
+            <?php echo do_shortcode( '[gravityform id="3" title="false"]' ); ?>
+        </div>
+        <a href="/trainingen" class="flex mt-[50px] justify-center">
             <div class="h-[24px] w-[24px] flex items-center">
                 <svg class="rotate-[-180deg]" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
